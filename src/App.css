@@ -10,7 +10,7 @@ body {
 }
 .container{
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 form {
@@ -153,6 +153,7 @@ h3{
   font-size: 24px;
   font-weight: 400;
 }
+
 .navigate{
   padding-right: 5%;
   padding-left: 5%;
@@ -161,6 +162,19 @@ h3{
 .right_arrow{
   width:60px;
   float: right;
+}
+
+.right_text{
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0e101c;
+}
+.right_text:hover{
+  color: #e65100
+
 }
 
 .left_arrow{
@@ -178,3 +192,31 @@ h3{
   flex-wrap: wrap;
 }
 
+.heading{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.text1{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  animation: 3s 1;
+}
+
+.text2{
+  font-size: 25px;
+  color:#000;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.heading span{
+  text-transform: uppercase;
+  display: block;
+}

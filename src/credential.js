@@ -13,7 +13,15 @@ const Form = () => {
  
   return (
       <div className="container">
-          <h3>Credentials</h3>
+        <div className="heading">
+            <span className="text1">
+                React Hooks
+            </span>
+            <span className="text2">
+                form
+            </span>
+            </div>
+          <h3><u>Credentials</u></h3>
          <form onSubmit={handleSubmit(onSubmit)}>
             <label>First Name<input name="firstname" ref={register( {required:true,})} /></label>
             {errors.firstname && <span>This field is required</span>}

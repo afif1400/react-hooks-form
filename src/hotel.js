@@ -1,6 +1,5 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import right_arrow from './assets/right_arrow.png';
 import { Link } from 'react-router-dom';
 import left_arrow from './assets/left_arrow.png';
 
@@ -15,12 +14,8 @@ const Booking = () => {
 
     return (
         <div className="container">
-            <h3>Booking Info</h3>
+        <h3><u>Booking Information</u></h3> 
         <form onSubmit={handleSubmit(onSubmit)}>
-            {/* <label>First Name<input name="firstname" ref={register( {required:true,})} /></label>
-            {errors.firstname && <span>This field is required</span>}
-            <label>Last Name<input name="lastname" ref={register({ required: true })} /></label>
-            {errors.lastname && <span>This field is required</span>} */}
             <div className="a">
             <label>Room Type<select name="room type" ref={register({required:true,})} type="">
                 <option value="single bed">Single Bed</option>
@@ -38,9 +33,9 @@ const Booking = () => {
             <input type="submit" />
         </form>
         <div className="navigate">
-            <Link to="/address">
-            <span>
-            <img  className="right_arrow" src={right_arrow} alt="right"/>
+            <Link to="/home">
+            <span className="right_text">
+            submit another response
             </span>
             </Link>
             <Link to="/address">
